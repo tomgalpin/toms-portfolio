@@ -1,0 +1,21 @@
+<div class="container large">
+  <div class="row">
+
+    <div id="side_nav" class="columns two">
+      <h1>Tom Galpin</h1>
+    </div>
+
+    <div class="columns two">
+    </div> <!-- .columns two -->
+    <% @projects.each do |project| %>
+      <div class="projects columns ten">
+        <p class="title"><%= project.title %></p>
+        <p class="about"><%= project.about %></p>
+        <p class="image"><%= project.image %></p>
+        <p class="heroku"><%= project.heroku %></p>
+        <p class="github"><%= project.github %></p>
+      </div> <!-- .columns ten -->
+    <% end %>
+
+  </div> <!-- .row -->
+</div> <!-- .container -->
