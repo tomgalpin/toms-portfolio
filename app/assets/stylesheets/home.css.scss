@@ -13,7 +13,6 @@ $profile_hover: #f03;
 
 #container {
   width: 1500px;
-  height: 695px;
   overflow: hidden;
   background-color: $body_color;
 }
@@ -39,7 +38,7 @@ $profile_hover: #f03;
   top: 0px;
   left: 0px;
   width: 220px;
-  height: 100%;
+  height: 120%;
   background-color: $nav_color;
   padding-left: 20px;
   padding-right: 15px;
@@ -100,9 +99,6 @@ $profile_hover: #f03;
   #nav_icons {
     width: 100%;
   }
-  // #nav_blurb {
-  //   height: 58px;
-  // }
   #nav_technologies {
     height: 155px;
     margin-bottom: -25px;
@@ -155,6 +151,8 @@ $profile_hover: #f03;
     overflow: hidden;
     padding: 10px;
     border: 4px solid;
+    display: inline;
+    background-position: center;
     img {
       border-radius: 10px;
     }

@@ -1,0 +1,90 @@
+@media screen and (max-width: 1150px) {
+  #container {
+    width: 1150px;
+  }
+  #name {
+    h1 {
+      font-size: 110px;
+      top: 40px;
+      left: 290px;
+    }
+  }
+  #projects_container {
+    top: 145px;
+    .projects {
+      width: 240px;
+      height: 240px;
+      padding: 0;
+    }
+    #beatenpath_project {
+      left: 265px;
+    }
+    #noesis_project {
+      left: 530px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #name {
+    h1 {
+      font-size: 90px;
+    }
+  }
+
+  #projects_container {
+    top: 115px;
+    height: 100%;
+    #noesis_project {
+      left: 0;
+      top: 260px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #name {
+    h1 {
+      font-size: 45px;
+      letter-spacing: -1px;
+      left: 281px;
+    }
+  }
+  #side_nav {
+    height: 150%;
+  }
+  #projects_container {
+    top: 75px;
+    height: 140%;
+    #beatenpath_project {
+      top: 260px;
+      left: 0;
+    }
+    #noesis_project {
+      left: 0;
+      top: 520px;
+    }
+  }
+  .modal_box_todo,
+  .modal_box_bp,
+  .modal_box_noesis {
+    width: 450px;
+  }
+  .left_arrow {
+    right: 470px;
+  }
+  .about_page {
+    height: 90%;
+    .about_content {
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+  #noesis_about_page {
+    p {
+      font-size: 14px;
+    }
+  }
+
+}
