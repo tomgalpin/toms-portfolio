@@ -5,7 +5,7 @@ $nav_height: 150px;
 $name_font: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 $name_font_weight: 100;
 $name_font_color: #222;
-$name_font_size: 170px;
+$name_font_size: 145px;
 $font: "HelveticaNeue-Light", Helvetica, Arial, sans-serif;
 $font_weight: 100;
 $project_hover: #f03;
@@ -19,9 +19,6 @@ $profile_hover: #f03;
 }
 
 #name {
-  position: absolute;
-  top: 0px;
-  left: 360px;
   h1 {
     font-family: $name_font;
     font-weight: $name_font_weight;
@@ -30,6 +27,10 @@ $profile_hover: #f03;
     letter-spacing: -7px;
     text-wrap: none;
     color: $name_font_color;
+    position: absolute;
+    top: 0px;
+    left: 360px;
+    display: inline-block;
   }
 }
 
@@ -88,8 +89,8 @@ $profile_hover: #f03;
   color: $nav_font_color;
   }
   .blurb {
-    font-size: 18px;
-    margin: 20px 10px 20px 10px;
+    font-size: 15px;
+    margin: 10px;
   }
   hr {
     width: 60%;
@@ -99,12 +100,12 @@ $profile_hover: #f03;
   #nav_icons {
     width: 100%;
   }
-  #nav_blurb {
-    height: 58px;
-  }
+  // #nav_blurb {
+  //   height: 58px;
+  // }
   #nav_technologies {
     height: 155px;
-    margin-bottom: 10px;
+    margin-bottom: -25px;
     a {
       text-decoration: none;
       color: orange;
@@ -141,15 +142,14 @@ $profile_hover: #f03;
 
 #projects_container {
   position: absolute;
-  top: 190px;
-  left: 320px;
+  top: 150px;
+  left: 265px;
   width: 80%;
   height: 460px;
   overflow: hidden;
   .projects {
     width: 280px;
     height: 280px;
-    float: left;
     margin: 20px;
     border-radius: 10px;
     overflow: hidden;
@@ -162,14 +162,23 @@ $profile_hover: #f03;
   #todo_project {
     background-image: url('blue_cropped.png');
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   #beatenpath_project {
     background-image: url('thebeatenpath_cropped.png');
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 328px;
   }
   #noesis_project {
     background-image: url('noesis_cropped.png');
     background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 650px;
   }
   #todo_project:hover,
   #beatenpath_project:hover,
