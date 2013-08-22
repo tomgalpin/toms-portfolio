@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require normalize.css
- *= require smart-grid.css
+
  *= require home.css.scss
+ *= require_tree .
  */

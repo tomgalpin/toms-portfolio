@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @projects = Project.all
+    # respond_to do |format|
+    #   format.js { render layout: false }
+    # end
   end
 end

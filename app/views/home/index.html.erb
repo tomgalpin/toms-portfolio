@@ -1,21 +1,148 @@
-<div class="container large">
-  <div class="row">
+<div id="container">
 
-    <div id="side_nav" class="columns two">
-      <h1>Tom Galpin</h1>
+  <div id="side_nav">
+    <div id="image_container">
+      <div id="profile_pic">
+        <p id="resume">Download<br>Resume</p>
+      </div>
+    </div> <!-- #image_container -->
+    <div id="nav_blurb">
+      <p class="texts blurb">Full-Stack Web Engineer<br>San Francisco</p>
+    </div>
+    <hr>
+    <div id="nav_technologies">
+      <p class="texts techs">Graduate of<br> <a href="https://generalassemb.ly/education/web-development-immersive/san-francisco" target="_blank">General Assembly's<br> Web-Development Immersive</a> Class</p>
+      <hr>
+      <p class="texts i_am">I am a passionte learner of JavaScript, Ruby, Rails, jQuery, HTML5, CSS3, & CoffeeScript
+    </div>
+    <div id="nav_icons">
+
+      <a href="http://github.com/tomgalpin" target="_blank">
+        <div class="icon_containers">
+          <div class="icon">
+            <%= image_tag "github-48.png" %>
+          </div>
+          <div class="icon_text">
+            <p>Github</p>
+          </div>
+        </div>
+      </a>
+      <a href="http://www.linkedin.com/pub/tom-galpin/7/66a/10b" target="_blank">
+        <div class="icon_containers">
+          <div class="icon">
+            <%= image_tag "linkedin-48.png" %>
+          </div>
+          <div class="icon_text">
+            <p>LinkedIn</p>
+          </div>
+        </div>
+      </a>
+      <a href="http://tomcodes.tumblr.com/" target="_blank">
+        <div class="icon_containers">
+          <div class="icon">
+            <%= image_tag "tumblr-48.png" %>
+          </div>
+          <div class="icon_text">
+            <p>Tumblr Blog</p>
+          </div>
+        </div>
+      </a>
+      <a href="" target="_blank">
+        <div class="icon_containers">
+          <div class="icon">
+            <%= image_tag "email-48.png" %>
+          </div>
+          <div class="icon_text">
+            <p>Email</p>
+          </div>
+        </div>
+      </a>
+      <a href="http://twitter.com/galpinyall" target="_blank">
+        <div class="icon_containers">
+          <div class="icon">
+            <%= image_tag "twitter-48.png" %>
+          </div>
+          <div class="icon_text">
+            <p>Twitter</p>
+          </div>
+        </div>
+      </a>
+    </div> <!-- #nav_icons -->
+  </div> <!-- #side_nav -->
+
+  <div id="name">
+    <h1>TOM GALPIN</h1>
+  </div>
+
+  <div id="projects_container">
+    <div  id="todo_project" class="projects">
+    </div>
+    <div id="beatenpath_project" class="projects">
+    </div>
+    <div id="noesis_project" class="projects">
     </div>
 
-    <div class="columns two">
-    </div> <!-- .columns two -->
-    <% @projects.each do |project| %>
-      <div class="projects columns ten">
-        <p class="title"><%= project.title %></p>
-        <p class="about"><%= project.about %></p>
-        <p class="image"><%= project.image %></p>
-        <p class="heroku"><%= project.heroku %></p>
-        <p class="github"><%= project.github %></p>
-      </div> <!-- .columns ten -->
-    <% end %>
+  </div> <!-- #project_container -->
 
-  </div> <!-- .row -->
+  <%= render "modaltodo" %>
+  <%= render "modalbeatenpath" %>
+  <%= render "modalnoesis" %>
+
 </div> <!-- .container -->
+
+<script>
+  //show & hide modal boxes
+  $('#todo_project').on('click', function() {
+    $('.modal_wrap_todo').fadeIn('fast');
+  });
+
+  $('#beatenpath_project').on('click', function() {
+    $('.modal_wrap_bp').fadeIn('fast');
+  });
+
+  $('#noesis_project').on('click', function() {
+    $('.modal_wrap_noesis').fadeIn('fast');
+  });
+
+  $('.close_modal, .modal_overlay_todo').click(function() {
+    $('.modal_wrap_todo').fadeOut('fast');
+  });
+
+  $('.close_modal, .modal_overlay_bp').click(function() {
+    $('.modal_wrap_bp').fadeOut('fast');
+  });
+
+  $('.close_modal, .modal_overlay_noesis').click(function() {
+    $('.modal_wrap_noesis').fadeOut('fast');
+  });
+
+  // right and left arrows between modals
+  $('#todo_right_arrow').on('click', function() {
+    $('.modal_wrap_todo').fadeOut('slow');
+    setTimeout(function() {
+      $('.modal_wrap_bp').fadeIn('slow');
+    }, 250);
+  });
+
+  $('#bp_right_arrow').on('click', function() {
+    $('.modal_wrap_bp').fadeOut('slow');
+    setTimeout(function() {
+      $('.modal_wrap_noesis').fadeIn('slow');
+    }, 250);
+  });
+
+  $('#bp_left_arrow').on('click', function() {
+    $('.modal_wrap_bp').fadeOut('slow');
+    setTimeout(function() {
+      $('.modal_wrap_todo').fadeIn('slow');
+    }, 250);
+  });
+
+  $('#noesis_left_arrow').on('click', function() {
+    $('.modal_wrap_noesis').fadeOut('slow');
+    setTimeout(function() {
+      $('.modal_wrap_bp').fadeIn('slow')
+    }, 250);
+  })
+
+</script>

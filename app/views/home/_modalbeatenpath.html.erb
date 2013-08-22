@@ -1,0 +1,35 @@
+<div class="modal_wrap_bp">
+  <div class="modal_overlay_bp">
+  </div> <!--modal_overlay-->
+  <div class="vertical-offset_bp">
+    <div class="modal_box_bp">
+      <%= image_tag 'modal_close.png', :class => 'close_modal' %>
+      <div id="bp_right_arrow" class="right_arrow">
+        <%= image_tag 'arrow_right.png' %>
+      </div>
+      <div id="bp_left_arrow" class="left_arrow">
+        <%= image_tag 'arrow_left.png' %>
+      </div>
+
+      <div class="modal_container">
+
+        <div class="modal_banner">
+          <a href="http://thebeatenpath.herokuapp.com/" target="blank"><div id="bp_link_button" class="modal_buttons">
+            <p>The Beaten Path</p>
+          </div></a>
+        </div> <!-- modal_banner-->
+        <div id="bp_about_page" class="about_page">
+          <div class="about_content">
+            <p>
+              For my first project at WDI, I created a roadtrip planner using the Googlemaps and Yelp API's.  Unlike typical directions based maps that plot points of interest to a single spot, I created multiple, hidden waypoints along the route of the map and passed each of these along to the Yelp search so that a user can find points of interest all along the route.
+              <br>
+              <br>
+              <a href="http://thebeatenpath.herokuapp.com/" target="blank">Play around with it here on Heroku!</a>
+            </p>
+          </div>
+        </div>
+      </div> <!-- modal_container -->
+
+    </div> <!--modal_box-->
+  </div> <!--vertical-offset-->
+</div> <!--modal wrap -->
