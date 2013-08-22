@@ -70,6 +70,10 @@ $profile_hover: #f03;
       border: 1px solid $profile_hover;
       #resume {
         visibility: visible;
+        a {
+          text-decoration: none;
+          color: #ecf0f1;
+        }
 
       }
     }

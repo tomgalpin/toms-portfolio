@@ -123,10 +123,10 @@ $font_weight: 100;
         }
       }
       .modal_buttons:hover {
-        background-color: red;
-        // -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.79);
-        // -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.79);
-        // box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.79);
+        border: 3px solid orange;
+        p {
+          color: orange;
+        }
       }
     }
   }

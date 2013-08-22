@@ -1,7 +1,11 @@
 class HomeController < ApplicationController
   def index
-    # respond_to do |format|
-    #   format.js { render layout: false }
-    # end
   end
+
+  def dowload
+    send_data pdf,
+      :filename => "Tom_Galpin_Resume.pdf",
+      :type => "application/pdf"
+  end
+
 end

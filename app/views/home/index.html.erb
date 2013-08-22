@@ -3,7 +3,7 @@
   <div id="side_nav">
     <div id="image_container">
       <div id="profile_pic">
-        <p id="resume">Download<br>Resume</p>
+        <p id="resume"><%= link_to "Download Resume", "Tom_Galpin_Resume.pdf", :format => 'pdf' %></p>
       </div>
     </div> <!-- #image_container -->
     <div id="nav_blurb">
@@ -13,7 +13,7 @@
     <div id="nav_technologies">
       <p class="texts techs">Graduate of<br> <a href="https://generalassemb.ly/education/web-development-immersive/san-francisco" target="_blank">General Assembly's<br> Web-Development Immersive</a> Class</p>
       <hr>
-      <p class="texts i_am">I am a passionte learner of JavaScript, Ruby, Rails, jQuery, HTML5, CSS3, & CoffeeScript
+      <p class="texts i_am">I am a passionte learner of JavaScript, Ruby, Rails, jQuery, HTML5, & CSS3
     </div>
     <div id="nav_icons">
 
@@ -47,7 +47,7 @@
           </div>
         </div>
       </a>
-      <a href="" target="_blank">
+      <a href="mailto:tomgalpin@gmail.com" target="_blank">
         <div class="icon_containers">
           <div class="icon">
             <%= image_tag "email-48.png" %>
